@@ -28,11 +28,11 @@ public class BitWorld {
         return no;
     }
     private static int findNumWithBits(int n, int k) {
-        int c=0, num=0;
-        while (c<n) {
+        int count=0, num=0;
+        while (count<n) {
             num++;
             if(Integer.bitCount(num)==k) {
-                c++;
+                count++;
             }
         }
         return num;
